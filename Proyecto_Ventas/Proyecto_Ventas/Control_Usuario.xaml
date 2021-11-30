@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto_Ventas.Control_Usuario">
+    <ContentPage.Content>
+        
+      
+        
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="CONTROL USUARIOS" HorizontalTextAlignment="Center" TextColor="White" FontSize="25"/>
+            </Frame>
+
+
+            <ListView x:Name="lstUsuario"  HasUnevenRows="true">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label Text="ID: " TextColor="Green"/>
+                                <Label Text="{Binding idUsuario}" TextColor="Blue"></Label>
+
+                                <Label Text="Nombre: " TextColor="Green"/>
+                                <Label Text="{Binding nombreUsuario}" TextColor="Blue"></Label>
+
+                                <Label Text="Creacion del Usuario: " TextColor="Green"/>
+                                <Entry Text="{Binding fechaCreacion}" TextColor="Blue"></Entry>
+
+                                <Label Text="Tipo de Usuario:" TextColor="Green"/>
+                                <Label Text="{Binding nombreTipoUsuario}" TextColor="Blue"></Label>
+
+                                <Label Text="Estado:" TextColor="Green"/>
+                                <Label Text="{Binding estadoUsuario}" TextColor="Blue"></Label>
+
+                        
+
+
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

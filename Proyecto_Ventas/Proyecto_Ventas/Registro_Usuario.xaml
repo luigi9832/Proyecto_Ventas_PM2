@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto_Ventas.Registro_Usuario">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Nombre Usuario: "></Label>
+            <Entry x:Name="txtNombre"></Entry>
+
+            <Label Text="Contraseña: "></Label>
+            <Entry x:Name="txtContra" IsPassword="True"></Entry>
+
+            <Label Text="Fecha Registro: "></Label>
+            <Entry x:Name="txtRegistro"></Entry>
+
+         
+
+
+            <Label Text="Tipo de Usuario: "></Label>
+            <Entry x:Name="txtTipo"></Entry>
+
+
+
+            <Button Text="Guardar Usuario" Clicked="ingresoUsuario"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto_Ventas.Reporteria">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="REPORTERIA" HorizontalTextAlignment="Center" TextColor="White" FontSize="25"/>
+            </Frame>
+
+            <ListView x:Name="lstReporteria"  HasUnevenRows="true">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label Text="ID Ventas: " TextColor="Green"/>
+                                <Label Text="{Binding idVenta}" TextColor="Blue"></Label>
+
+                                <Label Text="ID Cliente: " TextColor="Green"/>
+                                <Label Text="{Binding nombreCliente}" TextColor="Blue"></Label>
+
+                                <Label Text="ID Producto: " TextColor="Green"/>
+                                <Label Text="{Binding nombreProducto}" TextColor="Blue"></Label>
+
+                                <Label Text="Cantidad: " TextColor="Green"/>
+                                <Label Text="{Binding cantidad}" TextColor="Blue"></Label>
+
+                                <Label Text="Subtotal: " TextColor="Green"/>
+                                <Label Text="{Binding subtotal}" TextColor="Blue"></Label>
+
+                                <Label Text="ISV: " TextColor="Green"/>
+                                <Label Text="{Binding isv}" TextColor="Blue"></Label>
+
+                                <Label Text="Total: " TextColor="Green"/>
+                                <Label Text="{Binding total}" TextColor="Blue"></Label>
+
+                                <Label Text="Fehca de Venta: " TextColor="Green"/>
+                                <Entry Text="{Binding fechaVenta}" TextColor="Blue"></Entry>
+
+                                
+
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button Text="Imprimir reporte de compras" x:Name="btncompras" Clicked="btncompras_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

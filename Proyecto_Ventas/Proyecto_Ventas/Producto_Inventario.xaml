@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto_Ventas.Producto_Inventario">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="INGRESO DE PRODUCTOS AL INVENTARIO" HorizontalTextAlignment="Center" TextColor="White" FontSize="25"/>
+            </Frame>
+
+
+            <Label Text="Nonbre Producto: "></Label>
+            <Entry x:Name="txtNombre"></Entry>
+            
+            <Label Text="Descripcion del Prodcuto: "></Label>
+            <Entry x:Name="txtDescripcion"></Entry>
+
+            <Label Text="Precio  Costo: "></Label>
+            <Entry x:Name="txtCosto"></Entry>
+
+            <Label Text="Precio Venta: "></Label>
+            <Entry x:Name="txtVenta"></Entry>
+
+            <Label Text="Cantidad de entrada: "></Label>
+            <Entry x:Name="txtCantidad"></Entry>
+
+            <Label Text="Fecha de Ingreso: "></Label>
+            <Entry x:Name="txtIngreso"></Entry>
+            
+            <Button Text="Guardar Datos" Clicked="Button_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

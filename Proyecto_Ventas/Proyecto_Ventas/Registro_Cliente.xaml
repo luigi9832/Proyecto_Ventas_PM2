@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto_Ventas.Registro_Cliente"
+             >
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="REGISTRO DE CLIENTES" HorizontalTextAlignment="Center" TextColor="White" FontSize="25"/>
+            </Frame>
+
+
+
+
+
+            
+            <Label Text="Nombre Cliente: "></Label>
+            <Entry x:Name="txtNombre"></Entry>
+
+            <Label Text="Telefono: "></Label>
+            <Entry x:Name="txtTelefono"></Entry>
+
+            <Label Text="Direccion: "></Label>
+            <Entry x:Name="txtDireccion"></Entry>
+
+       
+
+            <Label Text="Fecha de Ingreso: "></Label>
+            <Entry x:Name="txtIngreso"></Entry>
+
+            <Button Text="Guardar Datos" Clicked="Ingreso_Cliente"/>
+
+            <Button x:Name="btnInfo" Text="Informacion del movil" Clicked="btnInfo_Clicked"/>
+            <Label x:Name="lblInfo"/>
+            
+            
+            <Button Text="Imprimir tabla de clientes" x:Name="btncliente" Clicked="btncliente_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto_Ventas.Inventario">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="MUESTRA DE INVENTARIOS" HorizontalTextAlignment="Center" TextColor="White" FontSize="25"/>
+            </Frame>
+
+
+           
+
+            <ListView x:Name="lstProducto"  HasUnevenRows="true">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label Text="ID: " TextColor="Green"/>
+                                <Label Text="{Binding idProducto}" TextColor="Blue"></Label>
+                                
+                                <Label Text="Nombre: " TextColor="Green"/>
+                                <Label Text="{Binding nombreProducto}" TextColor="Blue"></Label>
+                                
+                                <Label Text="Descripcion: " TextColor="Green"/>
+                                <Entry Text="{Binding descripcionProducto}" TextColor="Blue"></Entry>
+
+                                <Label Text="Cantidad en el Inventario: " TextColor="Green"/>
+                                <Label Text="{Binding cantidadProducto}" TextColor="Blue"></Label>
+
+                                <Label Text="Precio  Costo: " TextColor="Green"/>
+                                <Label Text="{Binding precioCosto}" TextColor="Blue"></Label>
+                                
+                                <Label Text="Precio de Venta: " TextColor="Green"/>
+                                <Label Text="{Binding precioVenta}" TextColor="Blue"></Label>
+                                
+                                <Label Text="Fehca de Ingreso: " TextColor="Green"/>
+                                <Entry Text="{Binding fechaRegistro}" TextColor="Blue"></Entry>
+                                
+                               
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button Text="Imprimir tabla de inventario" x:Name="btnNavegador" Clicked="btnNavegador_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
